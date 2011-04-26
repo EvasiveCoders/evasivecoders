@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function void_menu_uninstall() {
+  variable_del('void_menu_link_value');
+  variable_del('void_menu_link_value1');
+  variable_del('void_menu_link_value2');
+  variable_del('void_menu_link_value3');
+  variable_del('void_menu_link_value4');
+  variable_del('void_menu_link_value5');
+  variable_del('void_menu_link_value6');
+  variable_del('void_menu_link_value7');
+  variable_del('void_menu_link_value8');
+  variable_del('void_menu_link_value9');
+}

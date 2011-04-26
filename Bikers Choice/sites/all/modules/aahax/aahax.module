@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Some pimping hax for Bikers Choice.
+ */
+
+
+/**
+ * Implementing Hook Menu Alter.
+ */
+function aahax_menu_alter(&$items) {
+  // Kicking Node Clone in the teeth.
+  $items['node/%node/clone']['title'] = 'Clone';
+  $items['node/%node/clone']['type'] = MENU_LOCAL_TASK;
+}
+
+/**
+ * This is where we bitch slap views for not allowing decent field level grouping.
+ */
+function aahax_views_pre_execute(&$view){
+  if ($view->name == 'videos')
+  {
+    if($view->current_display == 'block_1') {
+      //drupal_set_message($view->current_display);
+      $view->build_info['query']->groupBy('field_data_field_subcategory_field_subcategory_value');
+      //drupal_set_message($view->build_info['query']);
+    }
+  }
+  if ($view->name == 'technical')
+  {
+    if($view->current_display == 'block_1') {
+      $view->build_info['query']->groupBy('field_data_field_subcategory_field_subcategory_value');
+    }
+  }
+}
