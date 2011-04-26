@@ -1,0 +1,123 @@
+/* Pagers
+-------------------------------------------------------------- */
+ul.pager {
+  width: 98.5%;
+  background-color: #ebebeb;
+  border: 1px solid #e0e0e0;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #fff;
+}
+
+ul.pager li a,
+ul.pager li.pager-current {
+  background-color: #aaa;
+  color: #fff;
+}
+
+ul.pager li.pager-current {
+  background-color: #f3f3f3;
+  border: 1px solid #cecece;
+  border-top: none;
+  color: #acacac;
+}
+
+ul.pager li a:link,
+ul.pager li a:visited {
+  border: 1px solid #a8a8a8;
+  color: #fff;
+}
+
+ul.pager li a:hover,
+ul.pager li a:focus {
+  background-color: #888;
+  color: #fff;
+}
+
+ul.pager li.pager-first a,
+ul.pager li.pager-previous a,
+ul.pager li.pager-next a,
+ul.pager li.pager-last a {
+  border: none;
+  color: transparent;
+}
+
+/* Pager - First */
+ul.pager li.pager-first a {
+  background: url(images/pager-first.png) no-repeat;
+}
+
+/* Pager - Previous */
+ul.pager li.pager-previous a {
+  background: url(images/pager-previous.png) no-repeat;
+}
+
+/* Pager - Next */
+ul.pager li.pager-next a {
+  background: url(images/pager-next.png) no-repeat;
+}
+
+/* Pager - Last */
+ul.pager li.pager-last a {
+  background: url(images/pager-last.png) no-repeat;
+}
+
+/* Pager Hovers */
+ul.pager li.pager-first a:hover,
+ul.pager li.pager-first a:focus,
+ul.pager li.pager-previous a:hover,
+ul.pager li.pager-previous a:focus,
+ul.pager li.pager-next a:hover,
+ul.pager li.pager-next a:focus,
+ul.pager li.pager-last a:hover,
+ul.pager li.pager-last a:focus  {
+  background-position: 0 -22px;
+}
+
+/* Pager in Header */
+.header-group-wrapper ul.pager li.pager-current {
+  background-color: #383838;
+  border: 1px solid #444;
+  border-top: none;
+  color: #acacac;
+}
+
+.header-group-wrapper ul.pager {
+  background-color: #4F4F4F;
+  border-bottom: 1px solid #6F6F6F;
+  border-left: 1px solid #5F5F5F;
+  border-right: 1px solid #5F5F5F;
+  border-top: 1px solid #444;
+}
+
+/* Pager in Postscript Bottom */
+.postscript-bottom-wrapper ul.pager li.pager-current {
+  background-color: #4C4C4C;
+  border: 1px solid #444;
+  border-top: none;
+  color: #fff;
+}
+
+.postscript-bottom-wrapper ul.pager {
+  background-color: #5F5F5F;
+  border-bottom: 1px solid #6F6F6F;
+  border-left: 1px solid #5F5F5F;
+  border-right: 1px solid #5F5F5F;
+  border-top: 1px solid #444;
+}
+
+/* Pager in Footer */
+.footer-wrapper ul.pager li.pager-current {
+  background-color: #343434;
+  border: 1px solid #444;
+  border-top: none;
+  color: #fff;
+}
+
+.footer-wrapper ul.pager {
+  background-color: #4F4F4F;
+  border-bottom: 1px solid #6F6F6F;
+  border-left: 1px solid #5F5F5F;
+  border-right: 1px solid #5F5F5F;
+  border-top: 1px solid #444;
+}

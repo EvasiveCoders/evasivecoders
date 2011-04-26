@@ -1,0 +1,181 @@
+/* $Id: ie6-fixes.css,v 1.1.2.4 2010/01/11 00:09:05 sociotech Exp $ */
+
+/* IE6 fixes
+-------------------------------------------------------------- */
+/* Lists */
+ul li {
+  list-style-image: url(../images/list-level-1_ie.png);
+}
+
+ul li ul li {
+  list-style-image: url(../images/list-level-2_ie.png);
+}
+
+ul li ul li ul li {
+  list-style-image: url(../images/list-level-3_ie.png);
+}
+
+/* Clearfixes */
+ul.links.inline.uc-categories,
+ul.pager,
+.prosper-quicktabs .quicktabs_main,
+.teaser {
+  display: block;
+  height: 1%;
+}
+
+/* Primary menu */
+#primary-menu ul.sf-menu li ul.menu {
+  margin-top: 7px;
+}
+
+#primary-menu ul.sf-menu li ul.menu li ul.menu {
+  margin-top: 12px;
+}
+
+/* Skinr styles */
+.prosper-grayborder-darkbackground ul li {
+  position: relative;
+}
+
+/* Prevent collapsing pager container */
+ul.pager {
+  height: 1%;
+  position: relative;
+  z-index: 10;
+}
+
+ul.pager li {
+  line-height: 200%;
+  margin-top: -3px;
+}
+
+ul.pager li.pager-first a,
+ul.pager li.pager-previous a,
+ul.pager li.pager-next a,
+ul.pager li.pager-last a {
+  border: none;
+  margin: 0;
+}
+
+ul.pager li.pager-first a:hover,
+ul.pager li.pager-previous a:hover,
+ul.pager li.pager-next a:hover,
+ul.pager li.pager-last a:hover{
+  border: none;
+}
+
+ul.pager li.pager-current {
+  height: 21px;
+  position: relative;
+  z-index: 10;
+}
+
+ul.pager li.pager-item a:link,
+ul.pager li.pager-item a:visited {
+  display: block;
+  margin-top: -1px;
+  padding: 0 8px;
+}
+
+/* Give height to header-top when only search is enabled */
+#header-top.header-top-search {
+  height: 32px;
+}
+
+/* move the search box up into header-top area */
+.search-box-inner form#search-theme-form {
+  top: -25px;
+}
+
+/* prevent search button from covering text input area */
+.search-box-inner #search-button {
+  width: 1%;
+}
+
+/* Menu list */
+.prosper-menu-list ul li {
+  height: 30px;
+}
+
+.prosper-menu-list ul li ul {
+  margin-bottom: -20px;
+}
+
+/* Ubercart */
+/* fix product page layout */
+.product-group .content {
+  float: left;
+  clear: right;
+}
+
+/* prevent elements from disappearing */
+.product-group .content #product-details,
+.block-uc_cart h2.block-title span {
+  zoom: 1;
+}
+
+/* prevent overlapping AJAX fieldsets */
+#uc-cart-checkout-form fieldset.collapsible {
+  position: static;
+}
+
+/* improve appearance of fieldset legends */
+#uc-cart-checkout-form fieldset legend {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#uc-cart-checkout-form fieldset legend a {
+  float: left;
+}
+
+#edit-submitted-name-wrapper, #edit-submitted-email-wrapper, #edit-submitted-city-wrapper, 
+#edit-submitted-state-wrapper, #edit-submitted-zip-wrapper, #edit-submitted-fax-wrapper {float: left; margin-right: 5px;  width: 270px}
+#edit-submitted-state-wrapper {margin-right: 10px;}
+#edit-submitted-street-address-wrapper, #edit-submitted-phone-wrapper, #edit-submitted-state-wrapper {  width: 270px; float: left; clear: left; margin-right: 5px;}
+
+#edit-submitted-name, #edit-submitted-email, #edit-submitted-street-address, 
+#edit-submitted-city, #edit-submitted-state, #edit-submitted-zip, #edit-submitted-phone, 
+#edit-submitted-fax {height: 1.3em; font-size: 1.3em; line-height: 1.4em;; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+
+#edit-submitted-name:hover, #edit-submitted-name:focus,
+#edit-submitted-email:hover, #edit-submitted-email:focus,
+#edit-submitted-street-address:hover, #edit-submitted-street-address:focus,
+#edit-submitted-city:hover, #edit-submitted-city:focus,
+#edit-submitted-state:hover, #edit-submitted-state:focus,
+#edit-submitted-zip:hover, #edit-submitted-zip:focus,
+#edit-submitted-phone:hover, #edit-submitted-phone:focus,
+#edit-submitted-fax:hover, #edit-submitted-fax:focus
+{border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+
+#edit-submitted-comments-wrapper { width: 365px; float: left; margin-top: -200px;}
+#edit-submitted-comments {height: 230px; font-size: 1.3em; line-height: 1.4em; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6; font-weight: normal; color: #555555;}
+#edit-submitted-comments:hover, #edit-submitted-comments:focus {border: 1px solid #999999; background: #e1e1e1; font-weight: normal; color: #212121;}
+
+#webform-component-member_services {clear: left; float: left; border: 0; margin: 0; padding: 0; width: 100%; border-bottom: 1px solid #e0e0e0;}
+#webform-component-member_services legend {font-weight: normal; width: 100%; margin: 5px 0 5px 0; padding: 5px 0 5px 0; font-size: 16px; border-bottom: 1px solid #e0e0e0; text-align: left; text-transform: capitalize;}
+
+#webform-component-send_relocation_packet, #webform-component-send_membership_info,  #webform-component-luncheon_reservations {width: 30%; height: 85px;float: left; margin: .5%; background: #efefef; border: 1px solid #999; padding: 1%;}
+#edit-submitted-member-services-send-membership-info {height: 1.3em; font-size: 1.3em; line-height: 1.4em; width: 170px; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+#edit-submitted-member-services-send-membership-info:hover, #edit-submitted-member-services-send-membership-info:focus {border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+#edit-submitted-member-services-luncheon-reservations-month-wrapper, #edit-submitted-member-services-luncheon-reservations-day-wrapper, #edit-submitted-member-services-luncheon-reservations-year-wrapper {float: left; margin-right: 5px;}
+.webform-client-form .textarea-identifier {display: none;}
+.webform-client-form #edit-submit {float: right; clear: left; margin: 10px 10px 0 0;}
+
+
+#edit-submitted-your-name-wrapper, #edit-submitted-your-email-wrapper, #edit-submitted-your-company-wrapper, #edit-submitted-event-title-wrapper, #edit-submitted-start-wrapper, #edit-submitted-start-time-wrapper, #edit-submitted-end-wrapper, #edit-submitted-end-time-wrapper, #edit-submitted-location-wrapper, #edit-submitted-event-description-wrapper {width: 290px;}
+#edit-submitted-your-company-wrapper {width: 330px;}
+#edit-submitted-start-time-wrapper, #edit-submitted-end-time-wrapper {margin-left: -10px;}
+#edit-submitted-event-description-wrapper {width: 310px;}
+
+#slider {width: 603px; height: 350px; background: transparent; position: absolute; z-index: 1000; left: 50%; top: 35px; margin: 0 0 0 -135px;}
+
+.footblock span.ext, #socialize span.ext, .combuttons span.ext, .hoodhost span.ext, .thinklocal span.ext {background: none; padding: 0; height: 0; width: 0; overflow: hidden;}
+#acce {width: 132px; height: 42px; background: transparent url(img/acce.jpg) top left no-repeat; margin-top: -15px;}
+#ucc {width: 46px; height: 46px; background: transparent url(img/ucc.jpg) top left no-repeat; margin-top: -15px;}
+#avatar {width: 51px; height: 44px; background: transparent url(img/avatar.jpg) top left no-repeat; margin-top: -15px;}
+
+
+#poptablechart {float: left;}
