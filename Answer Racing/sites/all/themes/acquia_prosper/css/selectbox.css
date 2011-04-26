@@ -1,0 +1,109 @@
+div.selectbox-wrapper {
+  position:absolute;
+  background-color:white;
+  padding:0px;
+  text-align:left;
+  max-height:200px;
+  overflow:auto;
+}
+div.selectbox-wrapper ul {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+div.selectbox-wrapper ul li.selected { 
+  background-color: #EAF2FB;
+}
+div.selectbox-wrapper ul li.current { 
+  background-color: #CDD8E4;
+}
+div.selectbox-wrapper ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  cursor:pointer;
+}
+
+#pid-support-online-application #webform-component-date_of_birth .selectbox /* look&fell of  select box*/
+{
+  width: 7em;
+  font-size:0.8em;
+  display : block;
+  text-align:left; 
+  background: url(bg_select.jpg) right;
+  /*height:18px;*/
+  cursor: pointer;
+  border:2px solid #000;
+  color:#333;
+  position: relative;
+  top: -13px;
+}
+
+
+#pid-support-online-application #webform-component-gender .selectbox /* look&fell of  select box*/
+{
+  width: 7.5em;
+  font-size:0.8em;
+  display : block;
+  text-align:left; 
+  background: url(bg_select.jpg) right;
+  /*height:18px;*/
+  cursor: pointer;
+  border:2px solid #000;
+  color:#333;
+  position: relative;
+  top: -1px;
+}
+
+#pid-support-online-application #webform-component-date_of_birth select, #pid-support-online-application #webform-component-gender select {
+	background: url(bg_select.jpg) right;
+}
+
+
+
+.ui-radio-state-disabled,
+.ui-radio-state-checked-disabled,
+.ui-radio-state-disabled-hover,
+.ui-radio-state-checked-disabled-hover {
+	color: #999;
+}
+span.ui-checkbox,
+span.ui-radio {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(newchecks.png) 0 -40px no-repeat;
+}
+span.ui-helper-hidden {
+	display: none;
+}
+label {
+	padding: 2px;
+	
+}
+span.ui-radio-state-hover,
+span.ui-checkbox-state-hover {
+	background-position: 0 -114px;
+}
+
+span.ui-checkbox-state-checked {
+	background-position: 0 -1px;
+}
+
+span.ui-checkbox-state-checked-hover {
+	background-position: 0 -75px;
+}
+span.ui-radio-state-checked-disabled-hover,
+span.ui-radio-state-checked-disabled,
+span.ui-radio-state-checked {
+	background-position: 0 -161px;
+}
+
+
+span.ui-radio-state-checked-hover {
+	background-position: 0 -200px;
+}
+
+.ui-helper-hidden-accessible {display: none;}

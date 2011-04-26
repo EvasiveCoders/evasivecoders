@@ -1,0 +1,370 @@
+html {background: #000;}
+body {background: #000 url(img/gcc_bg.jpg) top left repeat-x; color: #000;}
+
+.p10 {font-size: 10px;}
+.p12 {font-size: 12px;}
+.p14 {font-size: 14px;}
+.p16 {font-size: 16px;}
+.p18 {font-size: 18px; line-height: 22px;}
+
+.justice {text-align: justify;}
+
+a {color: #00aef0;}
+a:hover {color: #000;}
+.blacktoblue {color: #000;}
+.blacktoblue:hover {color: #00aef0;}
+#secondary-menu-inner a:hover, #secondary-menu-inner a.active {color: #fff;}
+
+a.buttonthis {font-size: 12px; background: #00aef0; color: #fff; text-align: center; border: 0; outline: 0; margin: 0; height: 20px; width: 120px; clear: none; padding-top: 3px;}
+a.buttonthis:hover {background: #999; color: #e0e0e0; text-decoration: none;}
+
+.benes {padding-left: 25px;}
+.quarter {width: 44%; float: left; margin: 1%; background: #efefef; border: 1px solid #999; padding: 1%;}
+.quarter:hover {background: #ededed;}
+
+address {font-size: 14px; width: 96%; float: left; margin: 1%; background: #efefef; border: 1px solid #999; padding: 1%;}
+address:hover {background: #ededed;}
+
+h2.block-title {color: #000; margin: 5px 0 5px 0; padding: 5px 0 5px 0; font-size: 16px; border-bottom: 1px solid #e0e0e0; text-align: left;}
+#pid-chamber-events-july4th h2.block-title {margin: 5px 0 0 0; padding: 5px 0 5px 0; font-size: 16px; border-bottom: 1px solid #e0e0e0; text-align: left;}
+#pid-chamber-events-july4th em {background: #efefef; display: block; padding: 5px; margin: 5px 0 0 0;}
+#pid-chamber-events-july4th .quicknav {background: #efefef; display: block; padding: 5px; margin: 5px 0 0 0; font-size: 14px;}
+#pid-chamber-events-july4th .quicknav strong {font-size: 16px; margin-bottom: 10px;}
+#pid-chamber-events-july4th .quicknav a {color: #000;}
+#pid-chamber-events-july4th .quicknav a:hover {color: #00aef0;}
+
+#pid-privacy h1.title {margin: 5px 0 5px 0; padding: 5px; font-size: 16px; border-bottom: 1px solid #e0e0e0; text-align: left;}
+
+.clear {height: 1px; width: 100%; clear: both;}
+#header-group-wrapper, #header-top-wrapper, #header-primary-menu-wrapper, #footer-wrapper, #footer-message-wrapper {background: none; border: 0;}
+#main-wrapper {padding: 0; background: #eee;}
+#header-group-inner, #main {background: #fff;}
+#main {padding: 15px 0 0 0;}
+#header-group-inner{min-height: 90px; background: #fff url(img/gcc_head.jpg) top center no-repeat;}
+#footer-wrapper {background: #000 url(img/gcc_foot.jpg) top left repeat-x;}
+#footer {background: #fff; min-height: 10px; padding: 0;}
+#footer-message-wrapper {background: #000;}
+
+#primary-menu ul.menu li > a:focus, #primary-menu ul.menu li > a:hover, #primary-menu ul.menu li:hover > a, #primary-menu ul.menu li.hover > a, #primary-menu ul.menu li.active-trail > a, #primary-menu ul.sf-menu li > a:hover, #primary-menu ul.sf-menu li:hover > a, #primary-menu ul.sf-menu li.hover > a, #primary-menu ul.menu li.active-trail > a.active, #primary-menu ul.sf-menu li > a:focus, #primary-menu ul.sf-menu li > a:hover {color: #000; border-top: 4px solid #00aef0;}
+#primary-menu ul.sf-menu li ul.menu li a:focus, #primary-menu ul.sf-menu li ul.menu li a:hover, #primary-menu ul.sf-menu li ul.menu li:hover > a, #primary-menu ul.sf-menu li ul.menu li.hover > a, #primary-menu ul.sf-menu li ul.menu li.active-trail > a, #primary-menu ul.sf-menu li ul.sf-menu li a:hover, #primary-menu ul.sf-menu li ul.sf-menu li:hover > a, #primary-menu ul.sf-menu li ul.sf-menu li.hover > a{border: 0; color: #00aef0;}
+#primary-menu {background: #fff; border-bottom: 1px solid #000;}
+#primary-menu ul li a, #primary-menu ul li {border: 0; padding: 5px 8px; background: transparent;}
+#primary-menu ul li a:hover, #primary-menu ul li:hover {background: transparent;}
+#primary-menu ul li a {font-size: 16px; color: #000; border-top: 4px solid #fff; background: transparent; text-shadow: none;}
+#primary-menu ul li a:hover, #primary-menu ul li a.active {border-top: 4px solid #00aef0;}
+
+#primary-menu ul ul {display: none; top: 32px; border: 1px solid #999; border-top: 2px solid #fff; background: #fff; margin-top: 11px;}
+#primary-menu ul ul li, #primary-menu ul ul li:hover {background: transparent}
+#primary-menu ul ul li a {font-size: 14px; color: #000; border: 0; background: transparent;}
+#primary-menu ul ul li a:hover, #primary-menu ul ul li a.active {color: #00aef0; border: 0;}
+
+#mission {width: 340px; float: left; margin: 45px 0 10px 0; color: #fff; font-size: 14px; font-style: italic;}
+
+#search {width: 250px; height: 20px; float: left;}
+#search-theme-form {width: 260px;}
+#edit-search-theme-form-header {background: #fff; height: 20px; float: left; margin: 0; clear: none;}
+#sumbitsearch {background: #00aef0; color: #fff; text-align: center; float: right; border: 0; outline: 0; margin: 0; height: 20px; width: 60px; clear: none;}
+#sumbitsearch:hover {background: #999; color: #e0e0e0;}
+
+#slider {width: 603px; background: transparent; position: absolute; z-index: 10; left: 50%; top: 40px; margin: 0 0 0 -135px;}
+#slides {position: relative; float: left; width: 603px; height: 184px;}
+#logo {padding-top: 0;}
+.roundthis {border: 1px solid #999; position: absolute; width: 603px; height: 184px;}
+#navi {position: relative; float: right;}
+#navi a {position: relative; float: left; margin: 10px 4px 0 0; width: 10px; height: 10px; background: #e0e0e0; border: 1px solid #666; outline: 0;}
+#navi a:hover, #navi .current {background-color: #00aef0;}
+
+#socialize {float: right; text-align: right; position: absolute; left: 50%; z-index: 10; margin: 10px 0 0 400px;}
+#socialize a {float: left;}
+ #linkedin {width: 24px; height: 25px; background: transparent url(img/linkedin-icon.jpg) top left no-repeat;}
+ #facebook {width: 24px; height: 25px; background: transparent url(img/facebook-icon.jpg) top left no-repeat;}
+ #youtube {width: 24px; height: 25px; background: transparent url(img/youtube-icon.jpg) top left no-repeat;}
+
+#footblock {width: 100%; height: 70px; overflow: hidden; margin: 0; padding: 0; float: left; clear: both;}
+#footicons a {float: left; margin-right: 5px; outline: 0;}
+#tcc {width: 75px; height: 41px; background: transparent url(img/tcc.jpg) top left no-repeat;}
+#acce {width: 132px; height: 42px; background: transparent url(img/acce.jpg) top left no-repeat;}
+#ucc {width: 46px; height: 46px; background: transparent url(img/ucc.jpg) top left no-repeat;}
+#thinklocal {width: 42px; height: 40px; background: transparent url(img/thinklocal.jpg) top left no-repeat; margin-top: 5px;}
+#avatar {width: 51px; height: 44px; background: transparent url(img/avatar.jpg) top left no-repeat;}
+
+#credits {border-top: 1px solid #e0e0e0; padding: 8px 0 0 0;}
+#credits a {color: #fff;}
+#credits a:hover {text-decoration: none; color: #00aef0;}
+
+#memberprofile {width: 100%; }
+#memberprofile h1 {font-size: 24px;}
+#memberprofile h1 .allybadge {float: right; font-size: 12px; text-indent: -9999em; color: #000; height: 20px;}
+ #memberprofile .zplatplus {background: transparent url(img/new-platplus.jpg) top left no-repeat; width: 115px;}
+ #memberprofile .yplat {background: transparent url(img/new-platbadge.jpg) top left no-repeat; width: 91px;}
+ #memberprofile .xgold {background: transparent url(img/new-goldbadge.jpg) top left no-repeat; width: 70px;}
+ #memberprofile .wsilver {background: transparent url(img/new-silverbadge.jpg) top left no-repeat; width: 73px;}
+ #memberprofile .vbronze {background: transparent url(img/new-bronzebadge.jpg) top left no-repeat; width: 81px;}
+
+#memberprofile h3 {font-size: 18px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 0;}
+#memberprofile #profileleft {width: 600px; float: left; }
+#memberprofile #profileright {font-size: 16px; width: 325px; float: left; margin: 0 0 0 10px;}
+#memberprofile #aboutmember {font-size: 14px; margin: 0; padding: 8px; background: #f3f3f3; border: 1px solid #999; border-top: 0; -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.4);}
+#memberprofile #membercontact {margin: 10px 0 0 10px;}
+#memberprofile #memoffers {float: left; margin: 15px 0 0 60px; padding: 6px 16px; text-align: center; border: 1px solid #999; background: #00aef0; text-decoration: none; color: #fff;}
+#memberprofile #memoffers:hover {background: #999; color: #e0e0e0;}
+#memberprofile #offerdesc {font-size: 18px; padding: 10px; color: #000; background: #fff; display: none;}
+
+#memslider {height: 250px;}
+#memnavi {float: right;}
+#memnavi a {float: left; margin: 10px 4px 0 0; width: 10px; height: 10px; background: #e0e0e0; border: 1px solid #666; outline: 0;}
+#memnavi a:hover, #memnavi a.current {background: #00aef0;}
+.memberprofile {width: 100%; position: absolute; display: none;}
+.memberprofile h1 {font-size: 24px;}
+.memberprofile h1 .allybadge {font-size: 12px; color: #000; padding: 2px 8px; text-align: center; border: 1px solid #999; position: relative; top: -6px; background-image: url(img/badgeshine.png); background-position: top left; background-repeat: repeat;}
+ .memberprofile .platplus {background-color: #cfdafa;}
+ .memberprofile .plat {background-color: #EDEDED;}
+ .memberprofile .gold {background-color: #EDE291;}
+ .memberprofile .silver {background-color: #F5F5F5;}
+ .memberprofile .bronze {background-color: #FCDEB3;}
+
+.memberprofile h3 {font-size: 18px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 0;}
+.memberprofile .profileleft {width: 600px; float: left; }
+.memberprofile .profileright {font-size: 16px; width: 325px; float: left; margin: 0 0 0 10px;}
+.memberprofile .aboutmember {font-size: 14px; margin: 0; padding: 8px; background: #f3f3f3; border: 1px solid #999; border-top: 0; -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.4);}
+.memberprofile .membercontact {margin: 10px 0 0 10px;}
+.memberprofile .memoffers {float: left; margin: 15px 0 0 60px; padding: 6px 16px; text-align: center; border: 1px solid #999; background: #00aef0; text-decoration: none; color: #fff;}
+.memberprofile .memoffers:hover {background: #999; color: #e0e0e0;}
+.memberprofile .offerdesc {font-size: 18px; padding: 10px; color: #000; background: #fff; display: none;}
+
+
+
+
+#directionservice {width: 100%;}
+#directionservice h1.titlebreak {margin: 20px 0 5px 0; padding: 0; width: 100%; font-size: 18px; line-height: 22px; border-bottom: 1px solid #000;}
+#directionservice #map_canvas {float: left; width: 600px; height: 400px; border: 1px solid #999; -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.4);}
+#directionservice #directions {width: 325px; float: left; margin: 0 0 0 10px;}
+#directionservice #directions #fromaddy { float: left; width: 96%; padding: 5px; background: #e0e0e0; border: 1px solid #999; -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.4);}
+#directionservice #directions #fromaddy .streetwrapper {width: 100%; float: left;}
+#directionservice #directions #fromaddy .citywrapper {width: 100%; float: left; clear: left;}
+#directionservice #directions #fromaddy .zipwrapper {width: 100%; float: left; clear: left;}
+
+
+#directionservice #directions #fromaddy label {float: left; font-weight: bold; width: 85px; margin: 4px 0;}
+#directionservice #directions #fromaddy input {width: 220px; float: left; margin: 4px 0;}
+#directionservice #directions #fromaddy #dirprint {display: none; float: left; margin: 10px 0 0 0;}
+#directionservice #directions #fromaddy .fancybutton {border: 1px solid #999; background: #00aef0; color: #fff; text-align: center; float: right; outline: 0; margin: 4px 2px 4px 0; padding: 0 0 2px 0; height: 20px; width: 100px; clear: none;}
+#directionservice #directions #fromaddy .fancybutton:hover {background: #999; color: #e0e0e0;}
+#directionservice #directions #directionstext {display: none; overflow: auto; height: 255px; margin: 10px 0 0 0; padding: 5px; background: #f3f3f3; border: 1px solid #999; -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.4);}
+
+.memberrow {border-bottom: 1px solid #e0e0e0; width: 96%; margin: 0 auto 15px auto; }
+.views-row-last .memberrow {margin: 0 auto;}
+
+.memberrow .companytitle {float: left; width: 98%; font-size: 18px; border-bottom: 2px solid #00aef0; padding: 8px;}
+.memberrow .companyinfo {float: left; width: 98%; font-size: 14px; padding: 8px;}
+
+.allybadgedir {float: left; height: 20px; margin: -1px 0 0 5px;}
+ .platplusbadge {background: transparent url(img/new-platplus.jpg) top left no-repeat; width: 115px;}
+ .platbadge {background: transparent url(img/new-platbadge.jpg) top left no-repeat; width: 91px;}
+ .goldbadge {background: transparent url(img/new-goldbadge.jpg) top left no-repeat; width: 70px;}
+ .silverbadge {background: transparent url(img/new-silverbadge.jpg) top left no-repeat; width: 73px;}
+ .bronzebadge {background: transparent url(img/new-bronzebadge.jpg) top left no-repeat; width: 81px;}
+.allybadgedir a {width: 100%; float: left;  height: 20px; float: left; background: transparent; outline: 0;}
+
+.offersbadge {float: left; margin: 0 0 0 5px; width: 20px; height: 20px; background: transparent url(img/membertomember.png) top left no-repeat;}
+.offersbadge a {width: 20px; height: 20px; float: left; background: transparent; outline: 0;}
+
+.tooltip {display:none; background:transparent url(img/black_arrow2.png) no-repeat; font-size:12px; height:20px; width:160px; padding:25px; color:#fff; z-index: 9999; text-align: center;}
+
+.memberrow {width: 100%; float: left; border: 1px solid #e0e0e0; border-bottom: 3px solid #999;}
+.memberrow:hover {border-color: #666;}
+.memberrow .companytitle  a {color: #333;}
+.memberrow .companytitle  a:hover {color: #00aef0;}
+.memberrow .cocats {float: left; width: 98.75%; padding: 4px 0 4px 8px; background: #f3f3f3;}
+.memberrow .cocats div {float: left; margin-right: 15px;}
+
+.allylevels {float: left; width: 100%; text-align: center; margin: 0 auto;}
+.allylevels div {width: 140px; float: left; text-align: center;}
+.allylevels div h1 {float: left; margin-right: 5px; padding: 5px; font-size: 16px; text-align: center; background: #efefef; border: 1px solid #e0e0e0;}
+.allylevels div h1:hover {background: #00aef0; cursor: pointer;}
+.allylevels div h1 span {width: 100%; float: left; clear: both; font-size: 12px;}
+.allylevels .levelinfo {display: none;}
+
+.allallys {float: left; width: 100%; text-align: center; margin: 0 auto;}
+.allallys h1 {margin: 10px 0 0 0; padding: 5px; font-size: 16px; border-bottom: 1px solid #e0e0e0; text-align: left;}
+.allallys ul {text-align: left;}
+.chamberbenefits {margin-top: 15px;}
+
+
+#edit-company {height: 1.3em; font-size: 1.3em; line-height: 1.4em; width: 170px; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+#edit-company:hover, #edit-company:focus {border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+.ui-button {top: -3px;}
+
+#edit-cat {display: none;}
+.views-exposed-form{display: none;}
+
+.pagebanner {width: 100%; text-align: center; margin: 3px 0 10px 0;}
+.pagebanner img {border: 3px solid #efefef; outline: 1px solid #000;}
+
+.julypage {width: 900px; margin: 0 auto;}
+
+.people img {border: 2px solid #999; outline: 1px solid #000;}
+.people img:hover {border-color: #00aef0;}
+
+#pid-local-government-elected-officials th {width: 25%; border: 1px solid #666; border-collapse:collapse; background: #ededed;}
+#pid-local-government-elected-officials td {width: 25%; border: 1px solid #efefef; border-collapse:collapse;}
+
+#pid-community-organizations th {width: 100%; border: 1px solid #666; border-collapse:collapse; background: #ededed;}
+#pid-community-organizations td {width: 33%; border: 1px solid #efefef; border-collapse:collapse;}
+
+#pid-newcomer-resources th {width: 100%; border: 1px solid #666; border-collapse:collapse; background: #ededed;}
+#pid-newcomer-resources td {width: 33%; border: 1px solid #efefef; border-collapse:collapse;}
+
+#pid-community-resources th {width: 100%; border: 1px solid #666; border-collapse:collapse; background: #ededed;}
+#pid-community-resources td {width: 33%; border: 1px solid #efefef; border-collapse:collapse;}
+
+.clean th {width: 100%; border: 1px solid #666; border-collapse:collapse; background: #ededed;}
+.clean td {width: 33%; border: 1px solid #efefef; border-collapse:collapse;}
+
+.movehere {width: 100%; padding-left: 1%;}
+.movehere .thisitem {width: 44%; height: 180px; float: left; margin: 1%; background: #efefef; border: 1px solid #999; padding: 1%;}
+.movehere .thisitem:hover {background: #ededed;}
+.movehere .thisitem p {height: 95px;}
+.movehere .thisitem a.buttonthis {float: right; font-size: 12px; background: #00aef0; color: #fff; text-align: center; border: 0; outline: 0; margin: 0; height: 20px; width: 120px; clear: none; padding-top: 3px;}
+.movehere .thisitem a.buttonthis:hover {background: #999; color: #e0e0e0; text-decoration: none;}
+
+
+.laketable {width: 96%;height: 365px; float: left; margin: 1%; background: #efefef; border: 1px solid #999; padding: 1%;}
+.laketable:hover {background: #ededed;}
+.laketable .lakemap {width: 400px; height: 365px; float: left; background: transparent url(img/thelake.jpg) top left no-repeat; }
+.laketable .thetable {width: 470px; height: 365px; float: left; margin: 0 0 0 30px; font-size: 8px; background: transparent url(img/thegrid.png) top left no-repeat;}
+
+.lakeinfo {width: 100%; padding-left: 1%;}
+.lakeinfo .quint {width: 17%; height: 290px; float: left; margin: 1% .5% 1% 0; background: #efefef; border: 1px solid #999; padding: 1%;}
+.lakeinfo .quint:hover {background: #ededed;}
+.lakeinfo .quint ul {float: left; margin-bottom: 8px; height: 225px; padding: 0;}
+.lakeinfo .quint a {float: left; margin: 0 0 0 37px; font-size: 14px;}
+
+#pid-contact-us .submitted {display: none;}
+
+
+#edit-submitted-name-wrapper, #edit-submitted-email-wrapper, #edit-submitted-city-wrapper, #edit-submitted-state-wrapper, #edit-submitted-zip-wrapper, #edit-submitted-fax-wrapper {float: left; margin-right: 5px;}
+#edit-submitted-state-wrapper {margin-right: 10px;}
+#edit-submitted-street-address-wrapper, #edit-submitted-phone-wrapper, #edit-submitted-state-wrapper {float: left; clear: left; margin-right: 5px;}
+
+#edit-submitted-name, #edit-submitted-email, #edit-submitted-street-address, #edit-submitted-city, #edit-submitted-state, #edit-submitted-zip, #edit-submitted-phone, #edit-submitted-fax {height: 1.3em; font-size: 1.3em; line-height: 1.4em; width: 270px; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+
+
+
+#edit-submitted-name:hover, #edit-submitted-name:focus,
+#edit-submitted-email:hover, #edit-submitted-email:focus,
+#edit-submitted-street-address:hover, #edit-submitted-street-address:focus,
+#edit-submitted-city:hover, #edit-submitted-city:focus,
+#edit-submitted-state:hover, #edit-submitted-state:focus,
+#edit-submitted-zip:hover, #edit-submitted-zip:focus,
+#edit-submitted-phone:hover, #edit-submitted-phone:focus,
+#edit-submitted-fax:hover, #edit-submitted-fax:focus
+{border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+
+#edit-submitted-subject-wrapper { width: 365px; height: 35px; float: left; margin-top: -240px;}
+#edit-submitted-subject {height: 35px; font-size: 1.3em; line-height: 1.4em; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+#edit-submitted-subject:hover, #edit-submitted-comments:focus {border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+
+#edit-submitted-comments-wrapper { width: 365px; height: 160px; float: left; margin-top: -130px;}
+#edit-submitted-comments {height: 160px; font-size: 1.3em; line-height: 1.4em; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6; font-weight: normal; color: #555555;}
+#edit-submitted-comments:hover, #edit-submitted-comments:focus {border: 1px solid #999999; background: #e1e1e1; font-weight: normal; color: #212121;}
+
+#webform-component-member_services {clear: left; float: left; border: 0; margin: 0; padding: 0; width: 100%; border-bottom: 1px solid #e0e0e0;}
+#webform-component-member_services legend {font-weight: normal; width: 100%; margin: 5px 0 5px 0; padding: 5px 0 5px 0; font-size: 16px; border-bottom: 1px solid #e0e0e0; text-align: left; text-transform: capitalize;}
+
+#webform-component-send_relocation_packet, #webform-component-send_membership_info,  #webform-component-luncheon_reservations {width: 30%; height: 85px;float: left; margin: .5%; background: #efefef; border: 1px solid #999; padding: 1%;}
+#edit-submitted-member-services-send-membership-info {height: 1.3em; font-size: 1.3em; line-height: 1.4em; width: 170px; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+#edit-submitted-member-services-send-membership-info:hover, #edit-submitted-member-services-send-membership-info:focus {border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+#edit-submitted-member-services-luncheon-reservations-month-wrapper, #edit-submitted-member-services-luncheon-reservations-day-wrapper, #edit-submitted-member-services-luncheon-reservations-year-wrapper {float: left; margin-right: 5px;}
+.webform-client-form .textarea-identifier {display: none;}
+.webform-client-form #edit-submit {float: right; clear: left; margin: 10px 10px 0 0;}
+
+
+#pid-events-submit .submitted {display: none;}
+#edit-submitted-your-name-wrapper, #edit-submitted-your-email-wrapper, #edit-submitted-your-company-wrapper, #edit-submitted-event-title-wrapper, #edit-submitted-start-wrapper, #edit-submitted-start-time-wrapper, #edit-submitted-end-wrapper, #edit-submitted-end-time-wrapper, #edit-submitted-location-wrapper, #edit-submitted-event-description-wrapper  {float: left; margin-right: 5px;}
+#edit-submitted-your-name, #edit-submitted-your-email, #edit-submitted-your-company, #edit-submitted-event-title, #edit-submitted-start-time, #edit-submitted-end-time, #edit-submitted-location {height: 1.3em; font-size: 1.3em; line-height: 1.4em; width: 270px; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+#edit-submitted-your-name:hover, #edit-submitted-your-email:hover, #edit-submitted-your-company:hover, #edit-submitted-event-title:hover, #edit-submitted-start-time:hover, #edit-submitted-end-time:hover, #edit-submitted-location:hover, #edit-submitted-your-name:focus, #edit-submitted-your-email:focus, #edit-submitted-your-company:focus, #edit-submitted-event-title:focus, #edit-submitted-start-time:focus, #edit-submitted-end-time:focus, #edit-submitted-location:focus {border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+#edit-submitted-event-description {height: 170px; font-size: 1.3em; line-height: 1.4em; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6; font-weight: normal; color: #555555;}
+#edit-submitted-event-description:hover, #edit-submitted-event-description:focus {border: 1px solid #999999; background: #e1e1e1; font-weight: normal; color: #212121;}
+#edit-submitted-your-company {width: 360px; margin-right: 0;}
+#edit-submitted-start-wrapper, #edit-submitted-end-wrapper {clear: left; margin-right: 15px;}
+#edit-submitted-start-month-wrapper, #edit-submitted-start-day-wrapper, #edit-submitted-start-year-wrapper {float: left; margin-right: 5px; margin-top: 0px;}
+#edit-submitted-end-month-wrapper, #edit-submitted-end-day-wrapper, #edit-submitted-end-year-wrapper {float: left; margin-right: 5px; margin-top: 0px;}
+#edit-submitted-start-month-wrapper, #edit-submitted-start-day-wrapper, #edit-submitted-end-month-wrapper, #edit-submitted-end-day-wrapper {margin-right: 15px;}
+#edit-submitted-event-description-wrapper { width: 349px; float: left; margin-top: -140px; margin-left: 3px;}
+
+.newsrow .block-title a {color: #000;}
+.newsrow .block-title a:hover {color: #00aef0;}
+.newsrow .postdate {color: #000; font-size: 13px; font-style: italic; margin-bottom: 5px;}
+.newsrow .postbody {color: #000; font-size: 14px; text-align: justify;}
+.newsrow .postmore {float: right; margin: 8px 0;}
+
+.combuttons {text-align: center; margin-top: 30px; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0;}
+.combuttons a {outline: 0; width: 151px; height: 42px; float: left; display: block; margin: 4px 0;}
+.combuttons .areaguide {background: url(img/vagbutton.jpg) top left no-repeat;}
+.combuttons .imap {background: url(img/imapbutton.jpg) top left no-repeat;}
+.combuttons .memdir {background: url(img/memdirbutton.jpg) top left no-repeat;}
+
+#wetherWidget {}
+#weatherImage {float: left;}
+#weatherImage img {position: absolute; z-index: 0; width: 125px; margin: 5px 0 0 5px; height: auto;}
+#weatherText {text-align: center; position: relative; z-index: 1; width: 50px; float: right; font-size: 16px; color: #666; margin: 10px 15px 5px 0; clear: both;}
+#weatherTemp {text-align: center; position: relative; z-index: 1; width: 50px; float: right; font-size: 20px; color: #666; margin: 0px 15px 5px 0;}
+#weatherWind {color: #666; width: 100%; text-align: center; font-size: 14px; margin: 5px 0 0 0; border-bottom: 1px solid #e0e0e0;}
+#sunup {color: #666; width: 100%; font-size: 12px; margin: 2px 0 0 5px;}
+#sundown {color: #666; width: 100%; font-size: 12px; margin: 2px 0 0 5px; border-bottom: 1px solid #e0e0e0;}
+#localdate {width: 100%; text-align: center; color: #666; font-size: 14px;}
+#localtime {width: 100%; text-align: center; color: #666; font-size: 18px; margin: 5px 0 0 0;}
+
+.footblock span.ext, #socialize span.ext, .combuttons span.ext, .hoodhost span.ext, .thinklocal span.ext {display: none;}
+
+
+.ieinputfix {height: 1.3em; font-size: 1.3em; line-height: 1.4em; width: 270px; font-family: Verdana,Arial,sans-serif; border: 1px solid #d3d3d3; background: #e6e6e6 url(smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555;}
+.ieinputfix:hover {border: 1px solid #999999; background: #dadada url(smoothness/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121;}
+
+.fourthbanner {width: 100%; height: 60px; text-align: center;}
+.fourthbanner a {float: left; margin: 0 0 0 50px; width: 468px; height: 60px; background: url(img/fourthbanner.jpg) top left no-repeat;}
+.fourthbanner2 {width: 100%; height: 320px; text-align: center;}
+.fourthbanner2 a {float: left; margin: 0 0 0 0px; width: 160px; height: 320px; background: url(img/fourthbanner2.jpg) top left no-repeat;}
+
+.allylist {margin: 25px 0 0 0; text-align: center;}
+.allylist h3 {color: #000; font-size: 14px;}
+.allylist .decoline {width: 350px; margin: 0 auto; height: 1px; border-bottom: 1px solid #00aef0;}
+
+.rtejustify {font-size: 14px; text-align: justify;}
+
+
+/* Demographics Charts */
+#pid-demographics th {text-align: center;}
+#pid-demographics td {text-align: center;}
+#pid-demographics .label {text-align: left; border-right: 1px solid #ddd;}
+#pid-demographics .oddrow {background: #efefef;}
+#pid-demographics .boldrow {font-weight: bold; border-bottom: 2px solid #ddd;}
+
+.employers {width: 910px; float: left; background: #efefef; border: 1px solid #999; padding: 15px;}
+.employers ul li {width: 49%; float: left;}
+.xsmall {width: 100%; font-size: 9px; clear: both; text-align: center;}
+.xsmall span {width: 100%; text-align: center; margin: 0 auto;}
+#poptable {display: none;}
+#poptablechart {width: 600px; float: left; margin: 15px 0 0 0;}
+#poppercent {float: right; width: 340px; height: 300px;}
+#racetable {width: 450px; float: left; margin: 55px 0 0 100px; border: 1px solid #999;}
+#popbyrace {float: left;}
+#popage {width: 300px; float: left; margin: 15px 0 0 35px; border: 1px solid #999;}
+#popagechart {width: 600px; float: left; margin: 15px 0 0 0;}
+#incomepercent {width: 520px; float: left; border: 1px solid #999; margin: 45px 0 0 15px;}
+#incomepercent th.wider {width: 130px;}
+#incomes {width: 350px; float: left;}
+#edlevel {width: 350px; float: left; margin: 25px 0 0 45px;}
+#edrates {width: 450px; float: left; border: 1px solid #999; margin: 40px 85px 0 0;}
+#hoodindustry {width: 400px; float: left; margin: 25px 0 0 35px;}
+#hoodindustrykey {width: 450px; height: 300px; float: left; margin: 25px 0 0 0;}
+
+#pid-sports-recreation th {width: 100%; border: 1px solid #666; border-collapse:collapse; background: #ededed;}
+#pid-sports-recreation td {width: 33%; border: 1px solid #efefef; border-collapse:collapse;}
+
+#pid-board .views-view-grid, #pid-staff .views-view-grid {margin: 0 0 0 20px;}
+
+#pid-media .postbody p {margin-top: 0;}
+.mediafiles {width: 100%; float: left; background: #efefef; border: 1px solid #999; margin-bottom: 8px;}
+.mediafiles  .field-item {width: 25%; float: left; text-align: center; padding: 5px 0;}
