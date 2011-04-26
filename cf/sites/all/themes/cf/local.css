@@ -1,0 +1,306 @@
+/* $Id: local_sample.css,v 1.1 2010/04/08 17:16:16 danprobo Exp $ */
+
+/****************************/
+/* LOCAL CSS          720816      */
+/****************************/
+
+/* Put your custom css and css overrides in this file and  */ 
+/* rename it local.css.  By restricting your css changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.               */
+
+/* Steps to activate local.css:                       */
+/* 1. Add your custom css to this file                */
+/* 2. Rename this file to local.css                   */
+/* 3. Uncomment (remove leading semicolon from ) the  */ 
+/*    following line in your theme's .info file:      */
+/*    ;stylesheets[all][] = local.css                 */
+/* 4. Clear cached data at admin/settings/performance */
+
+body {
+background:url(images/body-bg.gif) repeat-x #fff;
+font-size: 84%;
+font-family: Helvetica, Arial, sans-serif;
+color: #000;
+margin: 0;
+padding: 0;
+line-height: 1.5em;
+font-size-adjust: 0.53; 
+text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+
+h1,h2,h3,h4,h5,h6 { color: #720816;}
+#menu {
+height: 35px;
+background:url(images/red/menu-bg.png) repeat-x;
+width:952px;
+margin: 0 auto;
+}
+
+#nav {
+height: 35px;
+background:url(images/red/menu-bg.png) repeat-x;
+float:left;
+}
+
+#rounded-menu-left {
+height: 35px;
+background:transparent url(images/red/menu-left-bg.png) no-repeat;
+float:left;
+width:1px;
+line-height:0;
+font-size:0;
+}
+
+#rounded-menu-right {
+height: 35px;
+background:url(images/red/menu-right-bg.png) no-repeat;
+float:right;
+width:14px;
+line-height:0;
+font-size:0;
+}
+#nav li a:hover {
+background:transparent url(images/red/menu-hover-bg.png) repeat-x;
+}
+
+#nav li.active-trail a {
+background:transparent url(images/red/menu-hover-bg.png) repeat-x;
+}
+
+#nav li {
+float:left;
+background:url(images/red/menu-separator.png) no-repeat right top;
+height:35px;
+padding:0 1px 0 0;
+}
+
+#superfish .menu a {
+text-shadow: 0 3px 2px rgba(0,0,0,0.1);
+}
+.logo img {
+height:100px;
+}
+
+#header-middle {
+float: right;
+padding-top: 25px;
+height:100px;
+vertical-align: bottom;
+bottom:0;
+}
+
+.logo-text {
+display: block;
+font-weight: 100;
+position: relative;
+padding-left: 10px;
+font-family: Verdana,Tahoma;
+text-align:right;
+width:100%;
+right:0;
+bottom:0;
+height:150px;
+vertical-align: bottom;
+font-style:italic;
+font-size:22px;
+}
+.call {font-style: normal;font-size:19px;}
+.numnum {font-family: Arial;font-style: normal;font-size:30px;font-weight:700;}
+#authorize {
+display:none;
+}
+#superfish .menu li:hover {
+background:transparent url(images/red/menu-hover-bg.png) repeat-x;
+
+}
+
+#superfish .menu li.active-trail {
+background:transparent url(images/red/menu-hover-bg.png) repeat-x;
+}
+#superfish .menu li {padding: 0 7px 0 7px;}
+
+/*Toggle Bio */
+#toggy {
+	padding:10px;
+	font-size:15px;
+ color: #720816;
+	text-align:center;
+	margin-bottom:5px;
+}
+#toggy:hover {cursor:pointer;}
+a:link {
+color: #720816;/*#e87e17*/
+}
+
+a:visited {
+color: #720816;/*#e87e17*/
+}
+
+a:hover {
+color:#cc6600;
+}
+#block-block-9 .block-content {
+background-color: #f4f4f4;
+border-right: 1px solid #bbb;
+border-bottom: 1px solid #bbb;
+border-left: 1px solid #ddd;
+border-top: 1px solid #ddd;
+width: 214px;
+display: inline-block;
+}
+#block-block-9 .block-content-inner {
+margin: 0;
+padding: 5px 15px 5px 15px;
+}
+/*footer*/
+#footer {
+border-top: 0;
+}
+#block-block-13 .block-content {
+background-color: #f4f4f4;
+border-right: 1px solid #bbb;
+border-bottom: 1px solid #bbb;
+border-left: 1px solid #ddd;
+border-top: 1px solid #ddd;
+width: 948px;
+display: inline-block;
+margin-top:35px;
+}
+
+#block-block-13 .block-content-inner {
+margin: 0;
+padding: 5px 15px 5px 15px;
+text-align:center;
+}
+/*footer nav links -- override default li and restyle*/
+#block-block-13 .block-content-inner ul li{
+display:inline;
+list-style:none;
+list-style-image:none;
+background:none;
+}
+#block-block-13 .block-content-inner ul li a{
+color:#000;
+}
+#block-block-13 .block-content-inner ul li a:hover{
+color:#000;
+text-decoration:underline;
+}
+.seal {position:absolute;height:}
+.sealimg {height:100px;}
+/* End Footer Nav*/
+/*Yeah, gotta line up those blocks, oy*/
+#block-block-10 .block-content-inner {
+padding-bottom:10px;
+}
+.content-top{
+margin: 0 0 1.2em;
+padding: 0 0 .5em;
+border-bottom: none;
+border-right: none;
+border-left: none;
+border-top: none;
+background-color: transparent;
+}
+
+.sidebars-1 #content{
+width: 69%;
+padding-left: 0;
+float: left;
+}
+/*for the "choose your practice" block*/
+.redb { 
+background: transparent url(images/redb.png) no-repeat;
+width: 145px;
+height: 33px;
+color: #fff;
+text-align:center;
+vertical-align:middle;
+padding-top:7px;
+font-weight:700;
+margin: 9px auto;
+text-shadow: 0 3px 2px rgba(0,0,0,0.1);
+}
+
+.itstimetochoose {
+font: 14px/16px arial;
+text-align:center;
+font-weight: 700;
+padding: 15px 0;
+}
+
+/*end choose your practice*/
+.block h2 {
+margin:0 0 8px;
+}
+
+.breadcrumb {
+display: none;
+}
+div.tabs {
+	position:fixed;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	white-space:nowrap;
+	display:block;
+	top:100px;
+	left:0;
+	width:17px;
+
+}
+ul.primary {
+border: none;
+}
+ul.secondary {
+	position:fixed; 
+		top:100px;
+left:60px;
+}
+ul.primary li {
+}
+/*noooode*/
+.node {
+margin: 0.5em 0 1em 0;
+padding-bottom: 0;
+border: none;
+}
+/*FAQ Page */
+.faq-question a {
+font-weight:700;
+color: #000;
+}
+/*Removing default functionality of just about every faq system...*/
+.faq-answer{
+margin-left:0;
+padding-left:0;
+color: #720816;
+margin-bottom:30px;
+}
+.faq-question {
+margin-left:0;
+padding-left:0;
+}
+#preface-wrapper .block {
+padding:0;	
+}
+#preface-wrapper .block img {
+width:948px;	
+}
+
+.staticmoreinfo {
+margin-top:10px;
+}
+
+/* static image shadow*/
+
+#slideshow-wrapper{
+width:100%;
+background: transparent url(images/slideshow-shadow.gif) no-repeat center bottom;
+height:380px;
+margin-bottom:-45px;
+margin-top:14px;
+}
