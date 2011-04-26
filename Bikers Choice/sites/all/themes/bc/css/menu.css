@@ -1,0 +1,14 @@
+.nice-menu {width: 100%; float: left; list-style: none;}
+.nice-menu li {float: left; display: inline; background: transparent; border: 0; margin: 0 12px;}
+.nice-menu li a {text-decoration: none; background: transparent; color: #fff; text-transform: uppercase; border: 0; font-size: 13px; padding: 3px 3px 10px 3px; text-shadow: #666 1px 1px 3px;}
+.nice-menu li a:hover, .nice-menu > li.over > a, .nice-menu .active-trail > a {background: transparent; border-bottom: 3px solid rgba(35,31,32, 0.7);}
+
+/* Second Level */
+.nice-menu ul {width: auto; background: rgba(35,31,32, 0.7); margin-left: 1px; display: none; box-shadow: 0 1px 5px rgba(35,31,32, 0.7); -webkit-box-shadow: 0 1px 5px rgba(35,31,32, 0.7); -moz-box-shadow: 0 1px 5px rgba(35,31,32, 0.7);}
+.nice-menu ul div {background: rgba(35,31,32, 0.7);}
+.nice-menu ul li {float: left; display: block; clear: both; width: 100%; padding: 6px auto;}
+.nice-menu ul .active-trail > a {border: 0; color: #c2922e;}
+.nice-menu ul li a {font-size: 11px; display: block; width: auto; white-space: nowrap;}
+.nice-menu ul li a:hover, .nice-menu ul li.over {border: 0;}
+.nice-menu ul li a:hover {color: #c2922e;}
+.nice-menu ul ul {margin-top: -5px; margin-left: -3px;}
