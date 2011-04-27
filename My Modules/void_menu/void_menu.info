@@ -1,9 +1,8 @@
-; $Id: void_menu.info,v 1.1 2011/03/18 14:55:00 WillHall Exp $
 name = Void Menu
 description = Provides a series of new menu items that will accept any custom values.
 package = Menu
 core = "7.x"
-version = "7.x-1.1"
 dependencies[] = menu
 files[] = void_menu.module
 files[] = void_menu.install
+configure = admin/config/user-interface/void_menu

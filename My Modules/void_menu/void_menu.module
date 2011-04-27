@@ -1,79 +1,45 @@
 <?php
 
 /**
- * Implementation of hook_menu().
+ * @file
+ * Creates placeholders for menu items to use special paths, including but not limited to javascript function calls.
+ * ------------------------------------------
+ * Written by William Hall - www.mrtheme.com
+ * Based off of special_menu_items and parent_firstchild modules.
+ */
+
+/**
+ * Implements hook_menu().
  */
 function void_menu_menu() {
-  $items['<void>'] = array(
+
+/**
+ * Set up our base array for Void items.
+ */
+  $base = array(
     'page callback' => '_void_menu_menu',
     'access callback' => TRUE,
     'type' => MENU_CALLBACK,
     'external' => TRUE,
   );
 
-  $items['<void1>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
+/**
+ * Invoke our void items with the $base array.
+ */
+  $items['<void>'] = $base;
+  $items['<void1>'] = $base;
+  $items['<void2>'] = $base;
+  $items['<void3>'] = $base;
+  $items['<void4>'] = $base;
+  $items['<void5>'] = $base;
+  $items['<void6>'] = $base;
+  $items['<void7>'] = $base;
+  $items['<void8>'] = $base;
+  $items['<void9>'] = $base;
 
-  $items['<void2>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
-  $items['<void3>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
-  $items['<void4>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
-  $items['<void5>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
-  $items['<void6>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
-  $items['<void7>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
-  $items['<void8>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
-  $items['<void9>'] = array(
-    'page callback' => '_void_menu_menu',
-    'access callback' => TRUE,
-    'type' => MENU_CALLBACK,
-    'external' => TRUE,
-  );
-
+/**
+ * Calling our Admin Menu item.
+ */
   $items['admin/config/user-interface/void_menu'] = array(
     'title' => 'Void Menu',
     'description' => 'Configure Void Menu.',
@@ -86,12 +52,15 @@ function void_menu_menu() {
   return $items;
 }
 
+/**
+ * Empty callback ensures Drupal menu system accepts Void placeholders.
+ */
 function _void_menu_menu() {
   return drupal_not_found();
 }
 
 /**
- * Implementation of hook_menu_link_alter().
+ * Implements hook_menu_link_alter().
  */
 function void_menu_menu_link_alter(&$item, $menu) {
   if ($item['link_path'] == '<void>' || $item['link_path'] == '<void1>' || $item['link_path'] == '<void2>' || $item['link_path'] == '<void3>' || $item['link_path'] == '<void>4' || $item['link_path'] == '<void5>' || $item['link_path'] == '<void6>' || $item['link_path'] == '<void7>' || $item['link_path'] == '<void8>' || $item['link_path'] == '<void9>') {
@@ -105,236 +74,100 @@ function void_menu_menu_link_alter(&$item, $menu) {
 }
 
 /**
- * Implementation of hook_translated_menu_link_alter().
+ * Implements hook_translated_menu_link_alter().
  */
 function void_menu_translated_menu_link_alter(&$item, $map) {
   if ($item['module'] == 'menu') {
+    $href = $item['href'];
+    $item['options']['alter'] = TRUE;
+    $item['options']['external'] = TRUE;
+
+/**
+ * Sets variable matching for menu items.
+ */
     if ($item['link_path'] == '<void>') {
       $href = variable_get('void_menu_link_value', 'javascript: void(0);');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void1>') {
       $href = variable_get('void_menu_link_value1', '#');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void2>') {
       $href = variable_get('void_menu_link_value2', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void3>') {
       $href = variable_get('void_menu_link_value3', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void4>') {
       $href = variable_get('void_menu_link_value4', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void5>') {
       $href = variable_get('void_menu_link_value5', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void6>') {
       $href = variable_get('void_menu_link_value6', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void7>') {
       $href = variable_get('void_menu_link_value7', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void8>') {
       $href = variable_get('void_menu_link_value8', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     elseif ($item['link_path'] == '<void9>') {
       $href = variable_get('void_menu_link_value9', '');
-      $item['options']['alter'] = TRUE;
-      $item['href'] = $href;
-      $item['options']['external'] = TRUE;
     }
     else {
       unset($item['options']['unaltered_hidden']);
     }
+
+    $item['href'] = $href;
+
   }
 }
 
 /**
- * Special Menu Items admin settings form.
+ * Void Menu admin settings form.
  *
  * @return
- * The settings form used by Special Menu Items.
+ * The settings form used by Void Menu.
  */
 function void_menu_admin_settings_form() {
 
-  $form['void_menu_link_value'] = array(
+  $formbase = array(
     '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void&gt; tag, defaults to javascript: void(0);',
+  );
+
+  $form['void_menu_link_value'] = $formbase + array(
+    '#title' => check_plain('HTML value for <void>'),
+    '#description' => check_plain('You can use this field to customize the value of the <void> tag, defaults to javascript: void(0);'),
     '#default_value' => variable_get('void_menu_link_value', 'javascript: void(0);'),
   );
 
-  $form['void_menu_link_value1'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void1&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void1&gt; tag, defaults to #',
+  $form['void_menu_link_value1'] = $formbase + array(
+    '#title' => check_plain('HTML value for <void1>'),
+    '#description' => check_plain('You can use this field to customize the value of the <void1> tag, defaults to #'),
     '#default_value' => variable_get('void_menu_link_value1', '#'),
   );
 
-  $form['void_menu_link_value2'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void2&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void2&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value2', ''),
-  );
+  $i = 2;
+  while ($i < 10) {
+    $form['void_menu_link_value' . $i] = $formbase + array(
+      '#title' => check_plain('HTML value for <void' . $i . '>'),
+      '#description' => check_plain('You can use this field to customize the value of the <void' . $i . '> tag', array('!item' => $i)),
+      '#default_value' => variable_get('void_menu_link_value' . $i, ''),
+    );
+  $i++;
+  }
 
-  $form['void_menu_link_value3'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void3&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void3&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value3', ''),
-  );
-
-  $form['void_menu_link_value4'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void4&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void4&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value4', ''),
-  );
-
-  $form['void_menu_link_value5'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void5&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void5&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value5', ''),
-  );
-
-  $form['void_menu_link_value6'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void6&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void6&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value6', ''),
-  );
-
-  $form['void_menu_link_value7'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void7&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void7&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value7', ''),
-  );
-
-  $form['void_menu_link_value8'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void8&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void8&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value8', ''),
-  );
-
-  $form['void_menu_link_value9'] = array(
-    '#type' => 'textfield',
-    '#title' => 'HTML value for &lt;void9&gt;',
-    '#description' => 'You can use this field to customize the value of the &lt;void9&gt; tag',
-    '#default_value' => variable_get('void_menu_link_value9', ''),
-  );
-  
   return system_settings_form($form);
 }
 
 /**
- * Implementation of hook_form_alter().
+ * Implements hook_form_alter().
  */
 function void_menu_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'menu_overview_form') {
     foreach ($form as $key => $value) {
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void1>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void2>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void3>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void4>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void5>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void6>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void7>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void8>')) {
-        $item = $value['#item'];
-        $unaltered_hidden = $item['options']['unaltered_hidden'];
-        $form[$key]['#item']['hidden'] = $unaltered_hidden;
-        $form[$key]['hidden']['#default_value'] = !$unaltered_hidden;
-        $form[$key]['#attributes']['class'] = $unaltered_hidden ? array('menu-disabled') : array('menu-enabled');
-        $form[$key]['title']['#markup'] = check_plain($item['title']) . ($unaltered_hidden ? ' (' . t('disabled') . ')' : '');
-      }
-      if (isset($value['#item']['href']) && ($value['#item']['href'] == '<void9>')) {
+      if (isset($value['#item']['href']) && (drupal_substr($value['#item']['href'], 0, 5) == '<void')) {
         $item = $value['#item'];
         $unaltered_hidden = $item['options']['unaltered_hidden'];
         $form[$key]['#item']['hidden'] = $unaltered_hidden;
