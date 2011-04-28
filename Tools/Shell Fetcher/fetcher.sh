@@ -29,6 +29,11 @@ exit
 # Drupal 7
 elif [ $i = $D7 ];
 then
+cd $installdir
+drush dl drupal
+mv -f $installdir/drupal-7.0/* $installdir
+rm -rf $installdir/drupal-7.0
+cp $installdir/sites/default/default.settings.php $installdir/sites/default/settings.php
 echo "Oh yeah"
 # Drupal 6
 elif [ $i = $D6 ];
