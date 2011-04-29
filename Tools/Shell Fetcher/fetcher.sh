@@ -10,20 +10,17 @@ WP="Wordpress-Latest"
 D6DL="http://ftp.drupal.org/files/projects/drupal-6.20.tar.gz"
 D7DL="http://ftp.drupal.org/files/projects/drupal-7.0.tar.gz"
 WPDL="http://wordpress.org/latest.tar.gz"
+dblocation=${1:-DEFAULTVALUE}
 #######
 echo "Welcome to Fetcher. Where do you want to go today?"
-echo "Installation Directory (public_html):"
-read installdir
-echo "Linux Username (use root):"
-read user
-echo "Linux User's Password:"
-read pass
-echo "Database Name:"
-read dbname
-echo "Database User:"
-read dbuser
-echo "Database Pass:"
-read dbpass
+read -p "Installation Directory (public_html): " installdir
+read -p "Linux Username: " user
+read -p "Linux User's Password: " pass
+read -p "MySQL Location (leave blank for localhost): " dblocation
+dblocation=${dblocation:-localhost}
+read -p "Database Name: " dbname
+read -p "Database User: " dbuser
+read -p "Database Password: " dbpass
 PS3="Please type the number corresponding to the installation you would like: "
 select i in $D6 $D7 $WP Quit
 do 
