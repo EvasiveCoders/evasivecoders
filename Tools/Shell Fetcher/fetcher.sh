@@ -14,6 +14,10 @@ WPDL="http://wordpress.org/latest.tar.gz"
 echo "Welcome to Fetcher. Where do you want to go today?"
 echo "Installation Directory (public_html):"
 read installdir
+echo "Linux Username (use root):"
+read user
+echo "Linux User's Password:"
+read pass
 echo "Database Name:"
 read dbname
 echo "Database User:"
@@ -33,7 +37,10 @@ cd $installdir
 drush dl drupal
 mv -f $installdir/drupal-7.0/* $installdir
 rm -rf $installdir/drupal-7.0
-cp $installdir/sites/default/default.settings.php $installdir/sites/default/settings.php
+mysql --user="$user" --password="$pass"
+#cp $installdir/sites/default/default.settings.php $installdir/sites/default/settings.php
+#Since we're gonna require drush, might as well do it all the way, right?
+drush site-install standard --db-url=mysqli://$user:$pass@localhost/$dbname
 echo "Oh yeah"
 # Drupal 6
 elif [ $i = $D6 ];
