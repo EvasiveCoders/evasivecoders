@@ -1,9 +1,0 @@
-name = AAHax
-description = "I've got a lovely bunch of cocohax"
-package = AAHax
-
-version = 7.x-1.x
-core = 7.x
-project = aahax
-
-files[] = aahax.module
